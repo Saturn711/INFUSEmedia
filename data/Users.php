@@ -21,8 +21,6 @@ class Users
     {
         $userId = $this->_usersModel->checkUser($ip, $userAgent);
 
-        var_dump($userId);
-
         if(!$userId)
         {
             $userId = $this->_usersModel->addUser($ip, $userAgent);
